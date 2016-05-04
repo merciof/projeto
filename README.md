@@ -1,3 +1,3 @@
 # projeto-web-2016.1
 
-testando
+Projeto da disciplina de desenvolvimento de aplicações para web da UFRPE.
