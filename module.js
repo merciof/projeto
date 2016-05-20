@@ -9,7 +9,7 @@ app.controller("controller", ['$scope', function ($scope) {
         estado: "semi noovo"
     }];
 
-    this.SubmitForm = function () {
+    $scope.SubmitForm = function () {
         this.objectArray.push({
             nome: this.Object.nome,
             edicao: this.Object.edicao,
