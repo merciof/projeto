@@ -1,1 +1,78 @@
-.navbar{margin-bottom:20px;margin-top:30px;background:url(../img/navbar.png) repeat-x #0383c0;border:1px solid #ccc}.navbar-default .navbar-nav>.active>a,.navbar-default .navbar-nav>.active>a:focus,.navbar-default .navbar-nav>.active>a:hover,.navbar-default a:hover{background:0 0;color:#0383c0!important;font-weight:700}.logo{width:100%;margin:40px 0 0;font-family:Oswald,sans-serif}.cor-primaria{color:#0383c0}.subtext{color:#666;font-size:16px;font-weight:700;margin:10px 0 0 45px}header form{float:right;margin-top:30px;background:#0383c0;padding:15px;color:#fff;border-radius:5px}#produtos img{width:50%;height:50%}.jumbotron{background:url(../img/rsz_2estudante2.jpg) 720px 0 no-repeat #f4f4f4;height:385px}#slogan{font-family:Oswald,sans-serif;margin-left:180px;margin-top:50px}#titulo-jumbo{color:#0383c0}#subtexto2{margin-top:15px;margin-left:150px}footer{text-align:center;height:60px;background:#f4f4f4;margin-top:40px;padding:20px}
+.navbar {
+    margin-bottom: 20px;
+    margin-top: 30px;
+    background: url(../img/navbar.png) repeat-x #0383c0;
+    border: 1px solid #ccc
+}
+
+.navbar-default .navbar-nav>.active>a,
+.navbar-default .navbar-nav>.active>a:focus,
+.navbar-default .navbar-nav>.active>a:hover,
+.navbar-default a:hover {
+    background: 0 0;
+    color: #0383c0!important;
+    font-weight: 700
+}
+
+.logo {
+    width: 100%;
+    margin: 40px 0 0;
+    font-family: Oswald, sans-serif
+}
+
+.cor-primaria {
+    color: #0383c0
+}
+
+.subtext {
+    color: #666;
+    font-size: 16px;
+    font-weight: 700;
+    margin: 10px 0 0 45px
+}
+
+header form {
+    float: right;
+    margin-top: 30px;
+    background: #0383c0;
+    padding: 15px;
+    color: #fff;
+    border-radius: 5px
+}
+
+#produtos img {
+    width: 50%;
+    height: 50%
+}
+
+.jumbotron {
+    background: url(../img/rsz_2estudante2.jpg) 720px 0 no-repeat #f4f4f4;
+    height: 385px
+}
+
+#slogan {
+    font-family: Oswald, sans-serif;
+    margin-left: 180px;
+    margin-top: 50px
+}
+
+#titulo-jumbo {
+    color: #0383c0
+}
+
+#subtexto2 {
+    margin-top: 15px;
+    margin-left: 150px
+}
+
+footer {
+    text-align: center;
+    height: 60px;
+    background: #f4f4f4;
+    margin-top: 40px;
+    padding: 20px
+}
+
+.img-produto {
+    width: 90%;
+}
