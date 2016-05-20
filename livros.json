@@ -1,15 +1,44 @@
-{[
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- ]}
+[{
+
+    "nome": "Java Como Programar",
+    "edicao": "sexta",
+    "sinopse": "blablabla",
+    "autor": "Deitel",
+    "estado": "semi novo"
+    }, {
+
+    "nome": "Java Como Programar 2",
+    "edicao": "sexta",
+    "sinopse": "blablabla",
+    "autor": "Deitel",
+    "estado": "semi novo"
+    }, {
+
+    "nome": "Java Como Programar 3",
+    "edicao": "sexta",
+    "sinopse": "blablabla",
+    "autor": "Deitel",
+    "estado": "semi novo"
+
+    }, {
+
+    "nome": "Java Como Programar 4",
+    "edicao": "sexta",
+    "sinopse": "blablabla",
+    "autor": "Deitel",
+    "estado": "semi novo"
+    }, {
+
+    "nome": "Java Como Programar 5",
+    "edicao": "sexta",
+    "sinopse": "blablabla",
+    "autor": "Deitel",
+    "estado": "semi novo"
+    }, {
+
+    "nome": "Java Como Programar 6",
+    "edicao": "sexta",
+    "sinopse": "blablabla",
+    "autor": "Deitel",
+    "estado": "semi novo"
+    }]
