@@ -93,30 +93,31 @@
                     <div class="col-md-8">
                         <div class="form-group">
                             <label>Nome do Livro</label>
-                            <input class="form-control" name="Nome"type="text" ng-model="con.Object.nome" required>
-                            <span ng-show="form_anuncio.Nome.$error.required">Todos os campos devem ser preenchidos.</span>
+                            <input class="form-control" name="Nome" ng-minlength="3" type="text" ng-model="con.Object.nome" required>
+                            <span style="color:red;" ng-show="form_anuncio.Nome.$error.required">Todos os campos devem ser preenchidos.</span>
+                            <span style="color:red;" ng-show="form_anuncio.Nome.$error.minlength">O Nome deve ter no mínimo 3 caracteres</span>
                         </div>
                         <div class="form-group">
                             <label>Edição</label>
                             <input class="form-control" name="edicao"type="text" ng-model="con.Object.edicao" required>
-                            <span ng-show="form_anuncio.edicao.$error.required">Todos os campos devem ser preenchidos.</span>
+                            <span style="color:red;" ng-show="form_anuncio.edicao.$error.required">Todos os campos devem ser preenchidos.</span>
                         </div>
                         <div class="form-group">
                             <label>Sinopse</label>
                             <input class="form-control" name="sinopse"type="text" ng-model="con.Object.sinopse" required>
-                            <span ng-show="form_anuncio.sinopse.$error.required">Todos os campos devem ser preenchidos</span>
+                            <span style="color:red;" ng-show="form_anuncio.sinopse.$error.required">Todos os campos devem ser preenchidos</span>
                         </div>
                         <div class="form-group">
                             <label>Autor</label>
                             <input class="form-control" name="autor"type="text" ng-model="con.Object.autor" required>
-                            <span ng-show="form_anuncio.autor.$error.required">Todos os campos devem ser preenchidos.</span>
+                            <span style="color:red;" ng-show="form_anuncio.autor.$error.required">Todos os campos devem ser preenchidos.</span>
                         </div>
                         <div class="form-group">
                             <label>Estado de Conservação</label>
                             <input class="form-control" name="estado"type="text" ng-model="con.Object.estado" required>
-                            <span ng-show="form_anuncio.estado.$error.required">Todos os campos devem ser preenchidos.</span>
+                            <span style="color:red;" ng-show="form_anuncio.estado.$error.required">Todos os campos devem ser preenchidos.</span>
                         </div>                        
-                        <input class="btn btn-lg btn-primary" type="submit" />
+                        <input class="btn btn-lg btn-primary" ng-disabled="!form_anuncio.$valid" type="submit" />
                     </div>
                 </div>
             </form>
