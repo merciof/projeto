@@ -72,9 +72,9 @@
                     <tr>
                         <th>Name</th>
                         <th>Edicao</th>
-                        <th>Phone</th>
-                        <th>Status</th>
-                        <th>Data da Compra</th>
+                        <th>Sinopse</th>
+                        <th>Autor</th>
+                        <th>Estado de Conservação</th>
                     </tr>
                 </header>
                 <tbody>
@@ -87,11 +87,37 @@
                     </tr>
                 </tbody>
             </table>
+
+            <form ng-submit="con.SubmitForm();">
+                <div class="panel-body">
+                    <div class="col-md-8">
+                        <div class="form-group">
+                            <label>Nome</label>
+                            <input class="form-control" type="text" ng-model="con.Object.nome">
+                        </div>
+                        <div class="form-group">
+                            <label>Edição</label>
+                            <input class="form-control" type="text" ng-model="con.Object.edicao">
+                        </div>
+                        <div class="form-group">
+                            <label>Sinopse</label>
+                            <input class="form-control" type="text" ng-model="con.Object.sinopse">
+                        </div>
+                        <div class="form-group">
+                            <label>Autor</label>
+                            <input class="form-control" type="text" ng-model="con.Object.autor">
+                        </div>
+                        <div class="form-group">
+                            <label>Estado de Conservação</label>
+                            <input class="form-control" type="text" ng-model="con.Object.estado">
+                        </div>
+                        <input type="submit" />
+                    </div>
+                </div>
+            </form>
+
         </div>
 </body>
-
-<form>
-</form>
 
 </div>
 <!-- /container -->
