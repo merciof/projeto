@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="css/bootstrap.css">
     <script src="../repasse.me/angular.min.js"></script>
     <link rel="stylesheet" href="css/style.css">
-    <script src="module.js"></script>>
+    <script src="module.js"></script>
 </head>
 
 <body>
@@ -70,7 +70,7 @@
             <table class="table">
                 <header>
                     <tr>
-                        <th>Name</th>
+                        <th>Name do Livro</th>
                         <th>Edicao</th>
                         <th>Sinopse</th>
                         <th>Autor</th>
@@ -88,29 +88,34 @@
                 </tbody>
             </table>
 
-            <form ng-submit="con.SubmitForm();">
+            <form novalidate name="form_anuncio" ng-submit="form_anuncio.$valid && con.SubmitForm();">
                 <div class="panel-body">
                     <div class="col-md-8">
                         <div class="form-group">
-                            <label>Nome</label>
-                            <input class="form-control" type="text" ng-model="con.Object.nome">
+                            <label>Nome do Livro</label>
+                            <input class="form-control" name="Nome"type="text" ng-model="con.Object.nome" required>
+                            <span ng-show="form_anuncio.Nome.$error.required">Todos os campos devem ser preenchidos.</span>
                         </div>
                         <div class="form-group">
                             <label>Edição</label>
-                            <input class="form-control" type="text" ng-model="con.Object.edicao">
+                            <input class="form-control" name="edicao"type="text" ng-model="con.Object.edicao" required>
+                            <span ng-show="form_anuncio.edicao.$error.required">Todos os campos devem ser preenchidos.</span>
                         </div>
                         <div class="form-group">
                             <label>Sinopse</label>
-                            <input class="form-control" type="text" ng-model="con.Object.sinopse">
+                            <input class="form-control" name="sinopse"type="text" ng-model="con.Object.sinopse" required>
+                            <span ng-show="form_anuncio.sinopse.$error.required">Todos os campos devem ser preenchidos</span>
                         </div>
                         <div class="form-group">
                             <label>Autor</label>
-                            <input class="form-control" type="text" ng-model="con.Object.autor">
+                            <input class="form-control" name="autor"type="text" ng-model="con.Object.autor" required>
+                            <span ng-show="form_anuncio.autor.$error.required">Todos os campos devem ser preenchidos.</span>
                         </div>
                         <div class="form-group">
                             <label>Estado de Conservação</label>
-                            <input class="form-control" type="text" ng-model="con.Object.estado">
-                        </div>
+                            <input class="form-control" name="estado"type="text" ng-model="con.Object.estado" required>
+                            <span ng-show="form_anuncio.estado.$error.required">Todos os campos devem ser preenchidos.</span>
+                        </div>                        
                         <input type="submit" />
                     </div>
                 </div>
