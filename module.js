@@ -1,7 +1,7 @@
 var app = angular.module("app", []);
 
-app.controller('controller', ['$scope','$http', function ($scope,$http) {
-    
+app.controller('controller', ['$scope', '$http', function ($scope, $http) {
+
     /*$scope.objectArray = [{
         nome: "Java Como Programar",
         edicao: "Terceira",
@@ -11,13 +11,8 @@ app.controller('controller', ['$scope','$http', function ($scope,$http) {
     }];*/
 
     $http.get("livros.json").success(function (result) {
-   $scope.objectArray = result;
-   }).error(function (error) {
-   alert(error.error + "/" + error.statusCode);
-   
+        $scope.objectArray = result;
+    }).error(function (error) {
+        alert(error.error + "/" + error.statusCode);
     });
-    
-    
-  
-
 }]);
