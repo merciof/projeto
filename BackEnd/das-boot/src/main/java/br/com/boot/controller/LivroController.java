@@ -14,28 +14,28 @@ import br.com.boot.model.Livro;
 @RequestMapping("api/v1")
 public class LivroController {
 
-	@RequestMapping(value = "livros", method = RequestMethod.GET)
+	@RequestMapping(value = "/", method = RequestMethod.GET)
 	public List<Livro> list() {
 		return LivroTeste.list();
 		
 	}
 
-	@RequestMapping(value = "livros", method = RequestMethod.POST)
+	@RequestMapping(value = "/", method = RequestMethod.POST)
 	public Livro create(@RequestBody Livro livro){
 		return LivroTeste.create(livro);
 	}
 	
-	@RequestMapping(value = "livros/{id}", method = RequestMethod.GET)
+	@RequestMapping(value = "/{id}", method = RequestMethod.GET)
 	public Livro get(@PathVariable Integer id){
 		return LivroTeste.get(id);
 	}
 	
-	@RequestMapping(value = "livros/{id}", method = RequestMethod.PUT)
+	@RequestMapping(value = "/{id}", method = RequestMethod.PUT)
 	public Livro update(@PathVariable Integer id, @RequestBody Livro livro){
 		return LivroTeste.update(id,livro);
 	}
 	
-	@RequestMapping(value = "livros/{id}", method = RequestMethod.DELETE)
+	@RequestMapping(value = "/{id}", method = RequestMethod.DELETE)
 	public Livro delete(@PathVariable Integer id){
 		return LivroTeste.delete(id);
 	}
