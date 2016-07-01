@@ -1,13 +1,20 @@
-package br.com.boot.controller;
+package br.com.boot.service;
 
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import br.com.boot.model.Livro;
+import org.springframework.beans.factory.annotation.Autowired;
 
-public class LivroTeste {
+import br.com.boot.model.Livro;
+import br.com.boot.repository.LivroRepository;
+
+public class LivroService {
+	
+	@Autowired
+	LivroRepository livroRepository;
+	
 	private static Map<Integer, Livro> livros = new HashMap<Integer, Livro>();
 	private static Integer idIndex = 3;
 
@@ -20,27 +27,26 @@ public class LivroTeste {
 		livros.put(3, c);
 	}
 
-	public static List<Livro> list() {
+	public List<Livro> list() {
 		return new ArrayList<Livro>(livros.values());
 	}
 
-	public static Livro create(Livro livro) {
-		idIndex += idIndex;
-		livro.setId(idIndex);
-		livros.put(idIndex, livro);
-		return livro;
+	public Livro create(Livro livro) {		
+		return livroRepository.save(livro);
 	}
 
-	public static Livro get(Integer id) {
-		return livros.get(id);
+	public Livro get(Livro livro) {
+		return livroRepository.save(livro);
 	}
 
-	public static Livro update(Integer id, Livro livro) {
+	public Livro update(Integer id, Livro livro) {
 		livros.put(id, livro);
 		return livro;
 	}
 
-	public static Livro delete(Integer id) {
-		return livros.remove(id);
+	public void delete(Integer id) {
+		livroRepository.delete(id);
 	}
+
+
 }

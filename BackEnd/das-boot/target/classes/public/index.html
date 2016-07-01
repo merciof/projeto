@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="app2">
 
 <head>
     <meta charset="utf-8">
@@ -9,6 +9,8 @@
     <link href='https://fonts.googleapis.com/css?family=Oswald:700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/style.css">
+    <script src="angular.min.js"></script>
+    <script src="module.js"></script>
 </head>
 
 <body>
@@ -44,7 +46,7 @@
                     <ul class="nav navbar-nav">
                         <li class="active"><a href="index.html">Início</a></li>
                         <li><a href="anuncio.html">Anunciar</a></li>
-                        <li><a href="cadastro.html">Cadastre-se</a></li>                         
+                        <li><a href="cadastro.html">Cadastre-se</a></li>
                         <li><a href="#">Mais Recentes</a></li>
                         <li><a href="#">Em Destaque</a></li>
                         <li><a href="#">Categorias</a></li>
@@ -70,7 +72,7 @@
                 <p id="subtexto2">Negocie diretamente com o comprador e não gaste com frete.
             </div>
         </div>
-        <section id="produtos">
+        <!-- <section id="produtos">
             <div class="row">
                 <div class="col-md-4">
                     <div class="thumbnail">
@@ -191,19 +193,34 @@
             </div>
         </section>
 
-    </div>
-    <!-- /container -->
+    </div>-->
+        <!-- /container -->
 
-    <footer>
-        <p>Sebo Rural, 2016</p>
-    </footer>
+        <div>
+            <table>
+                <tr>
+                    <td>
+                        <h3>Todos os Livros</h3></td>
+                    <td></td>
+                </tr>
+                <tr ng-repeat="livro in livros">
+                    <td>{{livro.nome}}</td>
+                    <td>{{livro.autor}}</td>
+                    <td>{{livro.edicao}}</td>                    
+                </tr>
+            </table>
+        </div>
+
+        <footer>
+            <p>Sebo Rural, 2016</p>
+        </footer>
 
 
-    <!-- Bootstrap core JavaScript
+        <!-- Bootstrap core JavaScript
     ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+        <!-- Placed at the end of the document so the pages load faster -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
 </body>
 
 </html>

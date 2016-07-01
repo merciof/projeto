@@ -28,3 +28,5 @@ app.controller('controller', ['$scope', '$http', function ($scope, $http) {
     }
 
 }]);
+
+var app2 = angular.module("app2", []);
