@@ -2,21 +2,23 @@
 
     "nome": "Java Como Programar",
     "edicao": "sexta",
-    "sinopse": "blablabla",
+    "sinopse": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc venenatis purus dui, non convallis massa convallis non. Nulla dignissim bibendum fringilla. Integer dictum nisl et magna malesuada, sed pretium erat porta.",
     "autor": "Deitel",
     "estado": "semi novo"
+    "imagem": "img/sp_java_programar_8ed.jpg"
+    
     }, {
 
     "nome": "Java Como Programar 2",
     "edicao": "sexta",
-    "sinopse": "blablabla",
+    "sinopse": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc venenatis purus dui, non convallis massa convallis non. Nulla dignissim bibendum fringilla. Integer dictum nisl et magna malesuada, sed pretium erat porta.",
     "autor": "Deitel",
     "estado": "semi novo"
     }, {
 
     "nome": "Java Como Programar 3",
     "edicao": "sexta",
-    "sinopse": "blablabla",
+    "sinopse": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc venenatis purus dui, non convallis massa convallis non. Nulla dignissim bibendum fringilla. Integer dictum nisl et magna malesuada, sed pretium erat porta.",
     "autor": "Deitel",
     "estado": "semi novo"
 
@@ -24,21 +26,23 @@
 
     "nome": "Java Como Programar 4",
     "edicao": "sexta",
-    "sinopse": "blablabla",
+    "sinopse": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc venenatis purus dui, non convallis massa convallis non. Nulla dignissim bibendum fringilla. Integer dictum nisl et magna malesuada, sed pretium erat porta.",
     "autor": "Deitel",
     "estado": "semi novo"
     }, {
 
     "nome": "Java Como Programar 5",
     "edicao": "sexta",
-    "sinopse": "blablabla",
+    "sinopse": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc venenatis purus dui, non convallis massa convallis non. Nulla dignissim bibendum fringilla. Integer dictum nisl et magna malesuada, sed pretium erat porta.",
     "autor": "Deitel",
     "estado": "semi novo"
     }, {
 
     "nome": "Java Como Programar 6",
     "edicao": "sexta",
-    "sinopse": "blablabla",
+    "sinopse": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc venenatis purus dui, non convallis massa convallis non. Nulla dignissim bibendum fringilla. Integer dictum nisl et magna malesuada, sed pretium erat porta.",
     "autor": "Deitel",
     "estado": "semi novo"
-    }]
+    }
+    
+  ]
