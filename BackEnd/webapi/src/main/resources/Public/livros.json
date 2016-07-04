@@ -4,9 +4,9 @@
     "edicao": "sexta",
     "sinopse": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc venenatis purus dui, non convallis massa convallis non. Nulla dignissim bibendum fringilla. Integer dictum nisl et magna malesuada, sed pretium erat porta.",
     "autor": "Deitel",
-    "estado": "semi novo"
-    "imagem": "img/sp_java_programar_8ed.jpg"
-    
+    "estado": "semi novo",
+    "imagem": "img/sp_java_programar_8ed.jpg",
+   	 "preco": "30"	 	
     }, {
 
     "nome": "Java Como Programar 2",

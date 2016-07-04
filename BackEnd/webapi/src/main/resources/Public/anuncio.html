@@ -67,7 +67,7 @@
 
         <div ng-controller="controller">
 
-            <table class="table">
+            <!-- <table class="table">
                 <header>
                     <tr>
                         <th>Name do Livro</th>
@@ -86,38 +86,44 @@
                         <td>{{object.estado}}</td>
                     </tr>
                 </tbody>
-            </table>
+            </table> -->
 
-            <form novalidate name="form_anuncio" ng-submit="form_anuncio.$valid && SubmitForm();">
+            <form novalidate name="form_anuncio" ng-submit="form_anuncio.$valid">
                 <div class="panel-body">
                     <div class="col-md-8">
                         <div class="form-group">
                             <label>Nome do Livro</label>
-                            <input class="form-control" name="Nome" ng-minlength="3" type="text" ng-model="Object.nome" required>
+                            <input class="form-control" name="Nome" ng-minlength="3" type="text" ng-model="Object.nome" required/>
                             <span style="color:red;" ng-show="form_anuncio.Nome.$error.required">Todos os campos devem ser preenchidos.</span>
                             <span style="color:red;" ng-show="form_anuncio.Nome.$error.minlength">O Nome deve ter no mínimo 3 caracteres</span>
                         </div>
                         <div class="form-group">
                             <label>Edição</label>
-                            <input class="form-control" name="edicao"type="text" ng-model="Object.edicao" required>
+                            <input class="form-control" name="edicao"type="text" ng-model="Object.edicao" required/>
                             <span style="color:red;" ng-show="form_anuncio.edicao.$error.required">Todos os campos devem ser preenchidos.</span>
                         </div>
                         <div class="form-group">
                             <label>Sinopse</label>
-                            <input class="form-control" name="sinopse"type="text" ng-model="Object.sinopse" required>
+                            <input class="form-control" name="sinopse"type="text" ng-model="Object.sinopse" required/>
                             <span style="color:red;" ng-show="form_anuncio.sinopse.$error.required">Todos os campos devem ser preenchidos</span>
                         </div>
                         <div class="form-group">
                             <label>Autor</label>
-                            <input class="form-control" name="autor"type="text" ng-model="Object.autor" required>
+                            <input class="form-control" name="autor"type="text" ng-model="Object.autor" required/>
                             <span style="color:red;" ng-show="form_anuncio.autor.$error.required">Todos os campos devem ser preenchidos.</span>
                         </div>
                         <div class="form-group">
                             <label>Estado de Conservação</label>
-                            <input class="form-control" name="estado"type="text" ng-model="Object.estado" required>
+                            <input class="form-control" name="estado"type="text" ng-model="Object.estadoConservacao" required/>
                             <span style="color:red;" ng-show="form_anuncio.estado.$error.required">Todos os campos devem ser preenchidos.</span>
                         </div>                        
-                        <input class="btn btn-lg btn-primary" ng-disabled="!form_anuncio.$valid" type="submit" />
+                         <div class="form-group">
+                            <label>Preço</label>
+                            <input class="form-control" name="preco"type="text" ng-model="Object.preco" required/>
+                            <span style="color:red;" ng-show="form_anuncio.estado.$error.required">Todos os campos devem ser preenchidos.</span>
+                        </div> 
+                        
+                        <input class="btn btn-lg btn-primary" ng-disabled="!form_anuncio.$valid" type="submit" ng-click="salvarLivro()"/>
                     </div>
                 </div>
             </form>
