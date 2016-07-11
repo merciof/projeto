@@ -13,10 +13,13 @@ public class Livro {
 	String nome;
 	String sinopse;
 	String autor;
-	String estadoConservacao; 
+	String estado; 
 	String edicao;
+	String imagem;
+	String categoria;
+	String preco;
+	String data;
 	
-
 	public Livro() { }
 
 //	public Livro(Integer id, String nome, String sinopse, String autor, String estadoConservacao, String edicao) {
@@ -30,6 +33,38 @@ public class Livro {
 
 	public Integer getId() {
 		return id;
+	}
+
+	public String getImagem() {
+		return imagem;
+	}
+
+	public void setImagem(String imagem) {
+		this.imagem = imagem;
+	}
+
+	public String getCategoria() {
+		return categoria;
+	}
+
+	public void setCategoria(String categoria) {
+		this.categoria = categoria;
+	}
+
+	public String getPreco() {
+		return preco;
+	}
+
+	public void setPreco(String preco) {
+		this.preco = preco;
+	}
+
+	public String getData() {
+		return data;
+	}
+
+	public void setData(String data) {
+		this.data = data;
 	}
 
 	public void setId(Integer id) {
@@ -60,12 +95,12 @@ public class Livro {
 		this.autor = autor;
 	}
 
-	public String getEstadoConservacao() {
-		return estadoConservacao;
+	public String getEstado() {
+		return estado;
 	}
 
-	public void setEstadoConservacao(String estadoConservacao) {
-		this.estadoConservacao = estadoConservacao;
+	public void setEstado(String estado) {
+		this.estado = estado;
 	}
 
 	public String getEdicao() {

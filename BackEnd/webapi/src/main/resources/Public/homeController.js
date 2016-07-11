@@ -2,7 +2,7 @@ app.controller('homeController', ['$scope', '$http', function ($scope, $http) {
 
 	
 	
-	$http.get("livros.json").success(function (result) {
+	$http.get("http://localhost:8080/livro").success(function (result) {
         $scope.livros = result;
    
         console.log("sucesso");

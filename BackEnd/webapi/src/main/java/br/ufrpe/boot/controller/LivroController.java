@@ -61,8 +61,8 @@ public class LivroController {
 	}
 	
 	@RequestMapping(value = "/livro/{id}", method = RequestMethod.DELETE)
-	public ResponseEntity<Collection<Livro>> removerLivro(@PathVariable Integer id){			
-		Livro livroEncontrado = livroService.buscarPorId(id); 
+	public ResponseEntity<Collection<Livro>> removerLivro(@PathVariable String id){			
+		Livro livroEncontrado = livroService.buscarPorId(Integer.parseInt(id)); 
 		if(livroEncontrado == null) {
 			return new ResponseEntity<Collection<Livro>>(HttpStatus.NOT_FOUND);
 		}

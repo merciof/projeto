@@ -9,6 +9,7 @@
     <link href='https://fonts.googleapis.com/css?family=Oswald:700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/bootstrap.css">
     <script src="angular.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.0/angular-route.min.js"></script>  
     <link rel="stylesheet" href="css/style.css">
     <script src="module.js"></script>
 </head>
@@ -114,14 +115,21 @@
                         </div>
                         <div class="form-group">
                             <label>Estado de Conservação</label>
-                            <input class="form-control" name="estado"type="text" ng-model="Object.estadoConservacao" required/>
+                            <input class="form-control" name="estado"type="text" ng-model="Object.estado" required/>
                             <span style="color:red;" ng-show="form_anuncio.estado.$error.required">Todos os campos devem ser preenchidos.</span>
                         </div>                        
                          <div class="form-group">
                             <label>Preço</label>
                             <input class="form-control" name="preco"type="text" ng-model="Object.preco" required/>
-                            <span style="color:red;" ng-show="form_anuncio.estado.$error.required">Todos os campos devem ser preenchidos.</span>
+                            <span style="color:red;" ng-show="form_anuncio.preco.$error.required">Todos os campos devem ser preenchidos.</span>
                         </div> 
+                        <div class="form-group">
+                            <label>URL da Imagem</label>
+                            <input class="form-control" name="imagem"type="text" ng-model="Object.imagem" required/>
+                            <span style="color:red;" ng-show="form_anuncio.imagem.$error.required">Todos os campos devem ser preenchidos.</span>
+                        </div> 
+                        
+                        
                         
                         <input class="btn btn-lg btn-primary" ng-disabled="!form_anuncio.$valid" type="submit" ng-click="salvarLivro()"/>
                     </div>

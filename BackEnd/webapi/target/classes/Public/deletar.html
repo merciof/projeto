@@ -65,42 +65,21 @@
             <!--/.container-fluid -->
         </nav>
 
-        <!-- Main component for a primary marketing message or call to action -->
-        <div class="jumbotron">
-            <div class="row">
-                <h1 id="slogan">Anuncie, é de <span id="titulo-jumbo">graça!</span></h1>
-                <p id="subtexto2">Negocie diretamente com o comprador e não gaste com frete.
-            </div>
-        </div>
+       
                 
-        
-        <section id="produtos">          
-           <div ng-controller="homeController"> 
-            <div class="row">
-              <div ng-repeat="object in livros | filter: busca">  
-                <div class="col-md-4" >
-                    <div class="thumbnail">
-                        <img src={{object.imagem}}>
-                        <div class="caption">
-                            <h4 class="pull-right">R${{object.preco}}</h4>
-                            <h4><a href="produto.html">{{object.nome}}</a></h4>
-                            <p>{{object.sinopse}}</p>
-                        </div>
-                       <div class="ratings">
-                            <p class="pull-right"> 5 Avaliações</p>
-                            <p> <span class="glyphicon glyphicon-star"> </span>
-                                <span class="glyphicon glyphicon-star"> </span>
-                                <span class="glyphicon glyphicon-star"> </span>
-                                <span class="glyphicon glyphicon-star"> </span>
-                                <span class="glyphicon glyphicon-star"> </span>
-                            </p> 
+        <div ng-controller="controller">
+            <form novalidate name="form_anuncio" ng-submit="form_anuncio.$valid">
+                    <div class="panel-body">
+                        <div class="col-md-8">
+                            <div class="form-group">
+                                <label>Nome do Livro</label>
+                                <input class="form-control" name="id" type="text" ng-model="Object.id" required/>
+                            </div>
+                            <input class="btn btn-lg btn-primary" value="Deletar" type="text" ng-click="deletarLivro()"/>
                         </div>
                     </div>
-                </div>
-              </div>
-           </div>
-            </div>
-        </section>
+            </form>
+        </div>>
 
     </div>
     <!-- /container -->
