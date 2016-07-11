@@ -55,9 +55,8 @@
                     <ul class="nav navbar-nav navbar-right">
                         <form class="navbar-form">
                             <div class="form-group">
-                                <input type="text" class="form-control" placeholder="Buscar...">
+                                <input type="text" class="form-control" placeholder="Buscar..." ng-model="busca">
                             </div>
-                            <button type="submit" class="btn btn-default">Buscar</button>
                         </form>
                     </ul>
                 </div>
@@ -73,139 +72,33 @@
                 <p id="subtexto2">Negocie diretamente com o comprador e não gaste com frete.
             </div>
         </div>
+                
         
-<!--         <div ng-controller="homeController"> -->
-        
-<!--         <div ng-repeat="object in livros"> -->
-<!--         {{object.nome}} -->
-<!--         </div> -->
-<!--         </div> -->
-        
-        
-        
-        <section id="produtos">
-            
+        <section id="produtos">          
            <div ng-controller="homeController"> 
             <div class="row">
-              <div ng-repeat="object in livros">  
+              <div ng-repeat="object in livros | filter: busca">  
                 <div class="col-md-4" >
                     <div class="thumbnail">
-                        <img src="img/sp_java_programar_8ed.jpg">
+                        <img src={{object.imagem}}>
                         <div class="caption">
                             <h4 class="pull-right">R${{object.preco}}</h4>
                             <h4><a href="produto.html">{{object.nome}}</a></h4>
                             <p>{{object.sinopse}}</p>
                         </div>
-                        <div class="ratings">
+                       <div class="ratings">
                             <p class="pull-right"> 5 Avaliações</p>
                             <p> <span class="glyphicon glyphicon-star"> </span>
                                 <span class="glyphicon glyphicon-star"> </span>
                                 <span class="glyphicon glyphicon-star"> </span>
                                 <span class="glyphicon glyphicon-star"> </span>
                                 <span class="glyphicon glyphicon-star"> </span>
-                            </p>
+                            </p> 
                         </div>
                     </div>
                 </div>
               </div>
            </div>
-                <!-- <div class="col-md-4">
-                    <div class="thumbnail">
-                        <img src="img/sp_java_programar_8ed.jpg">
-                        <div class="caption">
-                            <h4 class="pull-right">R$30,00</h4>
-                            <h4><a href="produto.html">Deitel Como Programar</a></h4>
-                            <p>Este é um exemplo para ilustrar.</p>
-                        </div>
-                        <div class="ratings">
-                            <p class="pull-right"> 5 Avaliações</p>
-                            <p> <span class="glyphicon glyphicon-star"> </span>
-                                <span class="glyphicon glyphicon-star"> </span>
-                                <span class="glyphicon glyphicon-star"> </span>
-                                <span class="glyphicon glyphicon-star"> </span>
-                                <span class="glyphicon glyphicon-star"> </span>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="thumbnail">
-                        <img src="img/sp_java_programar_8ed.jpg">
-                        <div class="caption">
-                            <h4 class="pull-right">R$30,00</h4>
-                            <h4><a href="produto.html">Deitel Como Programar</a></h4>
-                            <p>Este é um exemplo para ilustrar.</p>
-                        </div>
-                        <div class="ratings">
-                            <p class="pull-right"> 5 Avaliações</p>
-                            <p> <span class="glyphicon glyphicon-star"></span>
-                                <span class="glyphicon glyphicon-star"></span>
-                                <span class="glyphicon glyphicon-star"></span>
-                                <span class="glyphicon glyphicon-star"></span>
-                                <span class="glyphicon glyphicon-star"></span>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="thumbnail">
-                        <img src="img/sp_java_programar_8ed.jpg">
-                        <div class="caption">
-                            <h4 class="pull-right">R$30,00</h4>
-                            <h4><a href="produto.html">Deitel Como Programar</a></h4>
-                            <p>Este é um exemplo para ilustrar.</p>
-                        </div>
-                        <div class="ratings">
-                            <p class="pull-right"> 5 Avaliações</p>
-                            <p> <span class="glyphicon glyphicon-star"> </span>
-                                <span class="glyphicon glyphicon-star"> </span>
-                                <span class="glyphicon glyphicon-star"> </span>
-                                <span class="glyphicon glyphicon-star"> </span>
-                                <span class="glyphicon glyphicon-star"> </span>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="thumbnail">
-                        <img src="img/sp_java_programar_8ed.jpg">
-                        <div class="caption">
-                            <h4 class="pull-right">R$30,00</h4>
-                            <h4><a href="produto.html">Deitel Como Programar</a></h4>
-                            <p>Este é um exemplo para ilustrar.</p>
-                        </div>
-                        <div class="ratings">
-                            <p class="pull-right"> 5 Avaliações</p>
-                            <p> <span class="glyphicon glyphicon-star"> </span>
-                                <span class="glyphicon glyphicon-star"> </span>
-                                <span class="glyphicon glyphicon-star"> </span>
-                                <span class="glyphicon glyphicon-star"> </span>
-                                <span class="glyphicon glyphicon-star"> </span>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="thumbnail">
-                        <img src="img/sp_java_programar_8ed.jpg">
-                        <div class="caption">
-                            <h4 class="pull-right">R$30,00</h4>
-                            <h4><a href="produto.html">Deitel Como Programar</a></h4>
-                            <p>Este é um exemplo para ilustrar.</p>
-                        </div>
-                        <div class="ratings">
-                            <p class="pull-right"> 5 Avaliações</p>
-                            <p> <span class="glyphicon glyphicon-star"> </span>
-                                <span class="glyphicon glyphicon-star"> </span>
-                                <span class="glyphicon glyphicon-star"> </span>
-                                <span class="glyphicon glyphicon-star"> </span>
-                                <span class="glyphicon glyphicon-star"> </span>
-                            </p>
-                        </div>
-                    </div>
-                </div> -->
             </div>
         </section>
 

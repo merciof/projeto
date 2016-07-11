@@ -33,7 +33,7 @@ app.controller('controller', ['$scope', '$http', function ($scope, $http) {
 			  
 			  $scope.livros.push(result);
    
-        console.log("sucesso");
+        alert("livro salvo");
     }, function (result) {
         
     	console.log("erro");
