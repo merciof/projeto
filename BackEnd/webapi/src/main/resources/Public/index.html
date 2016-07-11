@@ -90,20 +90,20 @@
               <div ng-repeat="object in livros">  
                 <div class="col-md-4" >
                     <div class="thumbnail">
-                        <img src="img/sp_java_programar_8ed.jpg">
+                        <img src={{object.imagem}}>
                         <div class="caption">
                             <h4 class="pull-right">R${{object.preco}}</h4>
                             <h4><a href="produto.html">{{object.nome}}</a></h4>
                             <p>{{object.sinopse}}</p>
                         </div>
-                        <div class="ratings">
+                       <div class="ratings">
                             <p class="pull-right"> 5 Avaliações</p>
                             <p> <span class="glyphicon glyphicon-star"> </span>
                                 <span class="glyphicon glyphicon-star"> </span>
                                 <span class="glyphicon glyphicon-star"> </span>
                                 <span class="glyphicon glyphicon-star"> </span>
                                 <span class="glyphicon glyphicon-star"> </span>
-                            </p>
+                            </p> 
                         </div>
                     </div>
                 </div>

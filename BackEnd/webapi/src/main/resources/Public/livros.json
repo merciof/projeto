@@ -1,48 +1,71 @@
 [{
 
-    "nome": "Java Como Programar",
-    "edicao": "sexta",
-    "sinopse": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc venenatis purus dui, non convallis massa convallis non. Nulla dignissim bibendum fringilla. Integer dictum nisl et magna malesuada, sed pretium erat porta.",
-    "autor": "Deitel",
-    "estado": "semi novo",
-    "imagem": "img/sp_java_programar_8ed.jpg",
-   	 "preco": "30"	 	
+        "nome": "Java Como Programar",
+        "edicao": "sexta",
+        "sinopse": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc venenatis purus dui, non convallis massa convallis non. Nulla dignissim bibendum fringilla. Integer dictum nisl et magna malesuada, sed pretium erat porta.",
+        "autor": "Deitel",
+        "estado": "semi novo",
+        "imagem": "img/sp_java_programar_8ed.jpg",
+        "categoria": "Programação",
+        "preco": "30",
+        "data": "11/07/2016"
     }, {
 
-    "nome": "Java Como Programar 2",
-    "edicao": "sexta",
-    "sinopse": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc venenatis purus dui, non convallis massa convallis non. Nulla dignissim bibendum fringilla. Integer dictum nisl et magna malesuada, sed pretium erat porta.",
-    "autor": "Deitel",
-    "estado": "semi novo"
-    }, {
-
-    "nome": "Java Como Programar 3",
-    "edicao": "sexta",
-    "sinopse": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc venenatis purus dui, non convallis massa convallis non. Nulla dignissim bibendum fringilla. Integer dictum nisl et magna malesuada, sed pretium erat porta.",
-    "autor": "Deitel",
-    "estado": "semi novo"
+        "nome": "Linguagem C.",
+        "edicao": "Primeira",
+        "sinopse": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc venenatis purus dui, non convallis massa convallis non. Nulla dignissim bibendum fringilla. Integer dictum nisl et magna malesuada, sed pretium erat porta.",
+        "autor": "Deitel",
+        "estado": "semi novo",
+        "imagem": "img/linguagem_c.jpg",
+        "categoria": "Programação",
+        "preco": "80",
+        "data": "11/07/2016"
 
     }, {
 
-    "nome": "Java Como Programar 4",
-    "edicao": "sexta",
-    "sinopse": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc venenatis purus dui, non convallis massa convallis non. Nulla dignissim bibendum fringilla. Integer dictum nisl et magna malesuada, sed pretium erat porta.",
-    "autor": "Deitel",
-    "estado": "semi novo"
+        "nome": "Arquitetura de Computadores",
+        "edicao": "Quinta",
+        "sinopse": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc venenatis purus dui, non convallis massa convallis non. Nulla dignissim bibendum fringilla. Integer dictum nisl et magna malesuada, sed pretium erat porta.",
+        "autor": "John L. Hennessy",
+        "estado": "Novo",
+        "imagem": "img/arquitetura.jpg",
+        "categoria": "Arquitetura",
+        "preco": "60",
+        "data": "11/07/2016"
+
     }, {
 
-    "nome": "Java Como Programar 5",
-    "edicao": "sexta",
-    "sinopse": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc venenatis purus dui, non convallis massa convallis non. Nulla dignissim bibendum fringilla. Integer dictum nisl et magna malesuada, sed pretium erat porta.",
-    "autor": "Deitel",
-    "estado": "semi novo"
+        "nome": "Algoritmos. Teoria e Prática",
+        "edicao": "Primeira",
+        "sinopse": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc venenatis purus dui, non convallis massa convallis non. Nulla dignissim bibendum fringilla. Integer dictum nisl et magna malesuada, sed pretium erat porta.",
+        "autor": "Cormen",
+        "estado": "semi novo",
+        "imagem": "img/algoritmos.jpg",
+        "categoria": "Algoritmos",
+        "preco": "80",
+        "data": "11/07/2016"
     }, {
 
-    "nome": "Java Como Programar 6",
-    "edicao": "sexta",
-    "sinopse": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc venenatis purus dui, non convallis massa convallis non. Nulla dignissim bibendum fringilla. Integer dictum nisl et magna malesuada, sed pretium erat porta.",
-    "autor": "Deitel",
-    "estado": "semi novo"
+        "nome": "Sistemas Operacionais",
+        "edicao": "Primeira",
+        "sinopse": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc venenatis purus dui, non convallis massa convallis non. Nulla dignissim bibendum fringilla. Integer dictum nisl et magna malesuada, sed pretium erat porta.",
+        "autor": "Deitel",
+        "estado": "semi novo",
+        "imagem": "img/sistemas.jpg",
+        "categoria": "Programação",
+        "preco": "75",
+        "data": "11/07/2016"
+    }, {
+
+        "nome": "Compiladores",
+        "edicao": "Primeira",
+        "sinopse": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc venenatis purus dui, non convallis massa convallis non. Nulla dignissim bibendum fringilla. Integer dictum nisl et magna malesuada, sed pretium erat porta.",
+        "autor": "Alfred V. Aho",
+        "estado": "semi novo",
+        "imagem": "img/compiladores.jpg",
+        "categoria": "Programação",
+        "preco": "50",
+        "data": "11/07/2016"
     }
-    
+
   ]
